@@ -145,9 +145,9 @@ print(res_unobserved)
 
 We use the estimand_type argument to specify that the target estimand should be for a natural direct effect or the natural indirect effect. For definitions, see Interpretation and Identification of Causal Mediation by Judea Pearl.
 
-Natural direct effect: Effect due to the path OW->ET
+Natural direct effect: Effect due to the path CC->ET
 
-Natural indirect effect: Effect due to the path OW->RI->ET (mediated by RI).
+Natural indirect effect: Effect due to the path CC->RI->ET (mediated by RI).
 """
 
 # Natural direct effect (nde)
