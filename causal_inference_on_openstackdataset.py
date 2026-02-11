@@ -215,8 +215,8 @@ import numpy as np
 specmodel= """
 # measurement model
 # Direct Effect
-ET ~ c * OW
-RI ~ a * OW
+ET ~ c * CC
+RI ~ a * CC
 ET ~ b * RI
 """
 # Label the effects
