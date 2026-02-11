@@ -49,8 +49,10 @@ plt.show()
 
 #--new graph----Final code
 causal_graph = """strict digraph  {
-
-OW->RI;
+SI->RI;
+NI->CC;
+RI-> CC;
+CC -> ET;
 RI->ET;
 OW->ET;
 OE->ET;
