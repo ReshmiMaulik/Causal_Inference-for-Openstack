@@ -106,13 +106,6 @@ estimate= model.estimate_effect(
 
 print(f'Estimate of causal effect: {estimate}')
 
-"""Conditional Estimates
-__categorical__OE
-(-0.001, 39.0]       9.636368
-(39.0, 139.0]        9.592247
-(139.0, 399.0]       9.478583
-(399.0, 1396.0]      9.148191
-(1396.0, 57002.0]    7.233890
 
 Refutation
 
@@ -122,15 +115,7 @@ Refuting the estimate
 refutel_common_cause=model.refute_estimate(estimands,estimate,"random_common_cause")
 print(refutel_common_cause)
 
-"""Refute: Add a random common cause
-Estimated effect:9.025651559477865
-New effect:9.025893347968985
-p value:0.98
 
-Final:  Refute: Add a random common cause
-Estimated effect:9.025651559477865
-New effect:9.02458758720755
-p value:0.86
 
 Removing a random subset of the data
 """
@@ -138,15 +123,6 @@ Removing a random subset of the data
 refutel_common_cause=model.refute_estimate(estimands,estimate,"data_subset_refuter")
 print(refutel_common_cause)
 
-"""Refute: Use a subset of data
-Estimated effect:9.025651559477865
-New effect:8.90466268310124
-p value:0.84
-
-Final->Refute: Use a subset of data
-Estimated effect:9.025651559477865
-New effect:9.065842742424303
-p value:1.0
 
 Replacing treatment with a random (placebo) variable
 """
@@ -154,15 +130,6 @@ Replacing treatment with a random (placebo) variable
 refutation = model.refute_estimate(estimands, estimate, method_name="placebo_treatment_refuter", placebo_type="permute", num_simulations=100)
 print(refutation)
 
-"""Refute: Use a Placebo Treatment
-Estimated effect:9.025651559477865
-New effect:-0.08778022345330783
-p value:0.84
-
-Final-> Placebo treatment Estimated effect:9.025651559477865
-New effect:-0.04398494981694512
-p value:0.92
-"""
 
 es_random=model.refute_estimate(estimands,estimate, method_name="random_common_cause", show_progress_bar= True)
 
