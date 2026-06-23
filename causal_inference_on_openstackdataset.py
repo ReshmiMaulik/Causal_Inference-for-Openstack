@@ -178,7 +178,7 @@ df.head(5)
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
-url = "https://raw.githubusercontent.com/ReshmiMaulik/Understanding-Developer-Interaction/main/Data/workingdataO.csv"
+url = "https://raw.githubusercontent.com/ReshmiMaulik/Understanding-Developer-Interaction/main/workingdataO.csv"
 df = pd.read_csv(url, header=None)
 
 # Convert all columns to numeric, errors='coerce' will replace non-numeric values with NaN
