@@ -168,7 +168,7 @@ Natural Direct Effect
 
 import pandas as pd
 
-url="https://raw.githubusercontent.com/ReshmiMaulik/Understanding-Developer-Interaction/main/Data/workingdataO.csv"
+url="https://raw.githubusercontent.com/ReshmiMaulik/Causal_Inference-for-Openstack/main/Data/workingdataO.csv"
 
 df = pd.read_csv(url,header=None)
 
