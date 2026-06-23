@@ -21,7 +21,7 @@ np.random.seed(0)
 
 # Import data from Github
 
-url="https://raw.githubusercontent.com/ReshmiMaulik//Causal_Inference-for-Openstack/main/workingdataO.csv"
+url="https://raw.githubusercontent.com/ReshmiMaulik/Causal_Inference-for-Openstack/main/workingdataO.csv"
 
 
 #df = pd.read_csv(url, sep="\t", header= None)
