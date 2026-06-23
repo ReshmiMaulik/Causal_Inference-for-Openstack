@@ -1,7 +1,8 @@
 # Causal_Inference-for-Openstack
 
 The code can be run in goolge colab as well as jupiter.
-Methodology:
+
+The following steps are followed for analysis:
 1. Construct the hypothesized DAG and refute graph.
 2. Apply diagnostic tests to evaluate the causal estimate and present numerical
 results.
